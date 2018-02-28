@@ -7,7 +7,9 @@ nuget:
   project_feed: true
 build:
   publish_wap: true
-  verbosity: minimal
+  verbosity: detailed
+before_build:
+      - nuget Restore
 artifacts:
 - path: CIDemo\bin
   name: CIDemo
