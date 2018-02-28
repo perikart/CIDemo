@@ -1,0 +1,14 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+configuration: Release
+platform: Any CPU
+nuget:
+  account_feed: true
+  project_feed: true
+build:
+  publish_wap: true
+  verbosity: minimal
+artifacts:
+- path: CIDemo\bin
+  name: CIDemo
+  type: WebDeployPackage
