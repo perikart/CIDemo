@@ -85,7 +85,7 @@ configuration:
 before_build:
   - nuget restore
 build:
-  project: CIDemo      # path to Visual Studio solution or project
+  project: C:\projects\cidemo\CIDemo.sln      # path to Visual Studio solution or project
   publish_wap: true               # package Web Application Projects (WAP) for Web Deploy
   publish_wap_xcopy: true         # package Web Application Projects (WAP) for XCopy deployment
   
