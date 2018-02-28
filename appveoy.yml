@@ -5,11 +5,12 @@ platform: Any CPU
 nuget:
   account_feed: true
   project_feed: true
+ cache: 
+    - packages -> **\packages.config
+before_build: nuget restore
 build:
   publish_wap: true
   verbosity: detailed
-before_build:
-      - nuget Restore
 artifacts:
 - path: CIDemo\bin
   name: CIDemo
