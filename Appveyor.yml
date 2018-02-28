@@ -82,8 +82,10 @@ platform:
 configuration:
 #  - Debug
   - Release
-before_build:
-  - nuget restore
+nuget:
+  project_feed: true
+
+
 build:
   project: C:\projects\cidemo\CIDemo.sln      # path to Visual Studio solution or project
   publish_wap: true               # package Web Application Projects (WAP) for Web Deploy
