@@ -7,7 +7,7 @@ nuget:
   project_feed: true
  cache: 
     - packages -> **\packages.config
-before_build: nuget restore "CIDemo\CIDemo\CIDemo.csproj"
+before_build: nuget restore "CIDemo\CIDemo\package.config"
 build:
   publish_wap: true
   verbosity: detailed
