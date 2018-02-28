@@ -82,7 +82,8 @@ platform:
 configuration:
 #  - Debug
   - Release
-
+before_build:
+  - nuget restore
 build:
   project: CIDemo      # path to Visual Studio solution or project
   publish_wap: true               # package Web Application Projects (WAP) for Web Deploy
