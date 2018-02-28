@@ -33,7 +33,7 @@ init:
   - git config --global core.autocrlf input
 
 # clone directory
-clone_folder: C:\Microsoft .Net\CIDemo
+#clone_folder: C:\Microsoft .Net\CIDemo
 
 # setting up etc\hosts file
 #hosts:
@@ -87,7 +87,7 @@ nuget:
 
 
 build:
-  project: C:\projects\cidemo\CIDemo.sln      # path to Visual Studio solution or project
+  project: cidemo\CIDemo.sln      # path to Visual Studio solution or project
   publish_wap: true               # package Web Application Projects (WAP) for Web Deploy
   publish_wap_xcopy: true         # package Web Application Projects (WAP) for XCopy deployment
   
